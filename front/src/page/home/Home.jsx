@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getProduct } from "../Api/productos";
-import Card from "../components/card/Card";
+import { getProduct } from "../../Api/productos";
+import Card from "../../components/card/Card";
 import "./home.css";
 
 const Home = () => {

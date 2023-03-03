@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./page/Home";
-import Card from "./components/card/Card.jsx";
+import Home from "./page/home/Home.jsx";
 
 const App = () => {
   // -------------------------------------------------
