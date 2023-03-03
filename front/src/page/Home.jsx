@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getProduct } from "../Api/productos";
+import Card from "../components/card/Card";
 import "./home.css";
 
 const Home = () => {
-    
   const [productos, setProductos] = useState();
 
   console.log(productos);
@@ -16,8 +16,14 @@ const Home = () => {
 
   return (
     <div className="home-header">
-      <h1>¡Pizzeria Mamma Mia!</h1>
-      <p>Tenemos las mejores y mas deliciosas pizzas</p>
+      {productos?.map((res) => (
+        <Card
+          img={res.image}
+          name={res.name}
+          price={res.price}
+          countInStock={res.countInStock}
+        />
+      ))}
     </div>
   );
 };
