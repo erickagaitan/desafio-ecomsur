@@ -14,8 +14,8 @@ const Card = ({ img, name, price, countInStock }) => {
       </div>
       <div className="product-card-name"><h3>{name}</h3></div>
       <div className="productcard-containerprice">
-        <div>${price}</div>
-        <div>stock {countInStock}</div>
+        <div><span>Precio:</span> ${price}</div>
+        <div><span>stock:</span> {countInStock}</div>
       </div>
       {countInStock ? 
         <div className="container-product-card-button">
