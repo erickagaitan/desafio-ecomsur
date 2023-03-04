@@ -1,14 +1,19 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import "./header.css"
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { ProductsContext } from "../../context/Context";
 
+import "./header.css";
 
+const Header = () => {
+  const { cart } = useContext(ProductsContext);
 
-const Header =()=>{
-return (
+  return (
     <header className="header">
+      <Link to="/carrito">
+        <i class="fa-solid fa-cart-shopping"></i> {cart?.length}{" "}
+      </Link>
     </header>
-)
-}
+  );
+};
 
 export default Header;

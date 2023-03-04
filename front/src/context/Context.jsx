@@ -6,7 +6,7 @@ export const ProductsContext = createContext();
 const Context = ({ children }) => {
   const [products, setProducts] = useState();
   const [cart, setCart] = useState([]);
-
+  
   useEffect(() => {
     getProduct().then((respuesta) => {
         setProducts(respuesta);
@@ -14,22 +14,24 @@ const Context = ({ children }) => {
   }, []);
 
   const addToCart = (item) => {
+    
     const itemIndex = cart.findIndex((products) => products._id === item._id);
+
     const updateCart = [...cart];
 
     if (itemIndex === -1) {
       const products = {
-        id: item._id,
+        _id: item._id,
         count: 1,
         price: item.price,
-        img: item.image,
+        img: item.img,
         name: item.name,
       };
       updateCart.push(products);
     } else {
       updateCart[itemIndex].count += 1;
     }
-
+    console.log(console.log('cars',cart))
     setCart(updateCart);
   };
 

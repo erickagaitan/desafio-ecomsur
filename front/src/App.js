@@ -27,14 +27,15 @@ const App = () => {
   return (
     <div className="App">
       <Context>
-        <Header />
+     
         <BrowserRouter>
+        <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/details/:id" element={<ProductDetails />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
-        <Footer />
       </Context>
     </div>
   );
