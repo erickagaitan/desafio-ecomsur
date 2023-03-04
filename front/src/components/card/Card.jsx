@@ -1,9 +1,18 @@
 import React from "react";
 import "./card.css";
+import { useNavigate } from "react-router-dom";
 
-const Card = ({ img, name, price, countInStock }) => {
+const Card = ({ img, name, price, countInStock,_id }) => {
+  const navigate = useNavigate();
+
+  const verDetalle = (_id) => {
+    navigate(`/details/${_id}`);
+  };
+
+
+  
   return (
-    <div className="product-card" onClick={() => console.log("hola image")}>
+    <div className="product-card" onClick={() =>verDetalle(_id)}>
       <div className="product-card-image">
         <img
           className="product-image"
@@ -12,22 +21,27 @@ const Card = ({ img, name, price, countInStock }) => {
           alt={name}
         />
       </div>
-      <div className="product-card-name"><h3>{name}</h3></div>
-      <div className="productcard-containerprice">
-        <div><span>Precio:</span> ${price}</div>
-        <div><span>stock:</span> {countInStock}</div>
+      <div className="product-card-name">
+        <h3>{name}</h3>
       </div>
-      {countInStock ? 
-        <div className="container-product-card-button">
-        <div
-          className="product-card-button"
-          onClick={() => console.log("hola")}
-        >
-          Add item to cart
+      <div className="productcard-containerprice">
+        <div>
+          <span>Precio:</span> ${price}
+        </div>
+        <div>
+          <span>stock:</span> {countInStock}
         </div>
       </div>
-    : null}
-
+      {countInStock ? (
+        <div className="container-product-card-button">
+          <div
+            className="product-card-button"
+            onClick={() => console.log("hola")}
+          >
+            Add item to cart
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };

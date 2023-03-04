@@ -9,3 +9,17 @@ export const getProduct = () => {
       return result;
     });
 };
+
+export const getProductId = (_id) => {
+  const URL = `http://localhost:5000/api/products/${_id}`;
+
+  return fetch(URL)
+    .then((response) => {
+      return response.json();
+    })
+    .then((result) => {
+      return result;
+    });
+};
+
+

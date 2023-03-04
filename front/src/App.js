@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/home/Home.jsx";
+import Header from "./components/header/Header.jsx"
+import Footer from "./components/footer/Footer.jsx";
+import ProductDetails from "./page/product-details/ProductDetails.jsx";
 
 const App = () => {
   // -------------------------------------------------
@@ -22,11 +25,16 @@ const App = () => {
 
   return (
     <div className="App">
+
+      <Header/>
+     
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/details/:id" element={<ProductDetails/>}> </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> 
+      <Footer/>
     </div>
   );
 };

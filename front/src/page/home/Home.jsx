@@ -6,7 +6,7 @@ import "./home.css";
 const Home = () => {
   const [productos, setProductos] = useState();
 
-  console.log(productos);
+  console.log("Estoy imprmiendo lo del home",productos);
 
   useEffect(() => {
     getProduct().then((respuesta) => {
@@ -16,12 +16,14 @@ const Home = () => {
 
   return (
     <div className="home-header">
-      {productos?.map((res) => (
+      {productos?.map((res, i) => (
         <Card
+          key={i}
           img={res.image}
           name={res.name}
           price={res.price}
           countInStock={res.countInStock}
+          _id={res._id}
         />
       ))}
     </div>
