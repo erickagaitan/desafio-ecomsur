@@ -9,7 +9,7 @@ const ProductDetails = () => {
 
   const [details, setDetils] = useState([]);
 
-  console.log("Estoy imprimiendo el detail",details);
+  console.log("Estoy imprimiendo el detail", details);
 
   useEffect(() => {
     getProductId(id).then((respuesta) => {
@@ -18,11 +18,16 @@ const ProductDetails = () => {
   }, [id]);
 
   return (
-    <DetailProductCard image={details.image} name={details.name} brand={details.brand} category={details.category} 
-    countInStock={details.countInStock} description={details.description}
-  
-    price={details.category}/>
-  )
+    <DetailProductCard
+      image={details.image}
+      name={details.name}
+      brand={details.brand}
+      category={details.category}
+      countInStock={details.countInStock}
+      description={details.description}
+      price={details.price}
+    />
+  );
 };
 
 export default ProductDetails;

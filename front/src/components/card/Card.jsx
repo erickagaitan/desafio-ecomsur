@@ -2,17 +2,15 @@ import React from "react";
 import "./card.css";
 import { useNavigate } from "react-router-dom";
 
-const Card = ({ img, name, price, countInStock,_id }) => {
+const Card = ({ img, name, price, countInStock, _id }) => {
   const navigate = useNavigate();
 
   const verDetalle = (_id) => {
     navigate(`/details/${_id}`);
   };
 
-
-  
   return (
-    <div className="product-card" onClick={() =>verDetalle(_id)}>
+    <div className="product-card" onClick={() => verDetalle(_id)}>
       <div className="product-card-image">
         <img
           className="product-image"

@@ -11,36 +11,43 @@ const DetailProductCard = ({
   price,
 }) => {
   return (
-    <div className="r">
-      <div>
-        <h1 className="title-detail-card">{name}</h1>
-      </div>
-      <div>
+    <div className="container-details">
+      <div className="image-details">
         <img
-          className="product-image"
+          className="product-image-detail"
           src={`http://localhost:5000/${image}`}
-          width={380}
           alt={name}
         />
       </div>
-      <div className="detailbrand">{brand}
-      </div>
 
-      <div className="detailcategory">{category}
-      </div>
+      <div className="details_electronics">
+        <div>
+          <h1 className="title-detail-card">{name}</h1>
+        </div>
 
-      
-      <div className="detaildescription">{description}
-      </div>
-      
-      <div className="detailcountInStock">{countInStock}
-      </div>
+        <div className="detailbrand"> Marca: {brand}</div>
 
-      
-      <div className="detailprice">{price}
+        <div className="detailcategory">Categoria: {category}</div>
+
+        <div className="detaildescription">Descripción:{description}</div>
+
+        <div className="detailcountInStock">Stock: {countInStock}</div>
+
+        <div className="detailprice">Precio: ${price}</div>
+
+        <div className="btn_details">
+          {countInStock ? (
+            <div className="container-button-detail">
+              <div
+                className="product-card-button-details"
+                onClick={() => console.log("hola")}
+              >
+                Add item to cart
+              </div>
+            </div>
+          ) : null}
+        </div>
       </div>
-
-
     </div>
   );
 };

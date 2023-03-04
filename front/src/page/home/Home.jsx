@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { getProduct } from "../../Api/productos";
+import React, { useEffect, useState, useContext } from "react";
+import { ProductsContext } from "../../context/Context";
+
 import Card from "../../components/card/Card";
+
 import "./home.css";
 
 const Home = () => {
-  const [productos, setProductos] = useState();
-
-  console.log("Estoy imprmiendo lo del home",productos);
-
-  useEffect(() => {
-    getProduct().then((respuesta) => {
-      setProductos(respuesta);
-    });
-  }, []);
+  const {products} = useContext(ProductsContext) 
 
   return (
     <div className="home-header">
-      {productos?.map((res, i) => (
+      {products?.map((res, i) => (
         <Card
           key={i}
           img={res.image}
