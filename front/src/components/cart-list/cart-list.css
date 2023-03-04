@@ -1,0 +1,164 @@
+.fa-cart-shopping {
+  color: rgb(255, 255, 255);
+}
+
+.card.content img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+
+.image-cart {
+  width: 100%;
+  object-fit: contain;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.precio {
+  margin-top: 20px;
+}
+
+.price {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(177, 15, 15);
+  height: 30px;
+  width: 80px;
+  margin: 5px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-secundary {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(24, 100, 24);
+  height: 30px;
+  margin: 5px;
+  width: 80px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.bold {
+  font-size: 19px;
+  font-weight: bolder;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+span {
+  font-size: 18px;
+}
+
+.btn-row-pizza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  padding-top: 7rem;
+}
+
+.cart h2 {
+  margin-bottom: 2rem;
+}
+
+.cart li {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart li img {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+.cart li .product h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.product {
+  display: flex;
+}
+
+.pricefinal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cotenedorbtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.payment {
+  padding-top: 10rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.not-found {
+  padding-top: 10rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.empty-card {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.btn-final {
+  border: none;
+  background-color: rgb(177, 15, 15);
+  padding: 5px;
+  width: 120px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.fa-credit-card {
+  font-size: 70px;
+  margin-bottom: 20px;
+}

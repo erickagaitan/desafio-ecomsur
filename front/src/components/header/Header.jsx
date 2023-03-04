@@ -9,9 +9,10 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link to="/carrito">
-        <i class="fa-solid fa-cart-shopping"></i> {cart?.length}{" "}
+      <Link to="/cart">
+        <i className="fa-solid fa-cart-shopping"></i> {cart?.length}{" "}
       </Link>
+      
     </header>
   );
 };

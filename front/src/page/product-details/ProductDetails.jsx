@@ -9,8 +9,6 @@ const ProductDetails = () => {
 
   const [details, setDetils] = useState([]);
 
-  console.log("Estoy imprimiendo el detail", details);
-
   useEffect(() => {
     getProductId(id).then((respuesta) => {
       setDetils(respuesta);

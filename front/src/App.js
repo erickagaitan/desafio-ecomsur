@@ -5,6 +5,7 @@ import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import ProductDetails from "./page/product-details/ProductDetails.jsx";
 import Context from "./context/Context.jsx";
+import Cart from "./page/cart/Cart.jsx";
 
 const App = () => {
   // -------------------------------------------------
@@ -33,6 +34,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/details/:id" element={<ProductDetails />} />
+            <Route path="/cart" element={<Cart />}> </Route>
           </Routes>
           <Footer />
         </BrowserRouter>

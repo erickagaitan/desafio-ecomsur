@@ -31,7 +31,7 @@ const Context = ({ children }) => {
     } else {
       updateCart[itemIndex].count += 1;
     }
-    console.log(console.log('cars',cart))
+
     setCart(updateCart);
   };
 
