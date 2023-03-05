@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ProductsContext } from "../../context/Context";
 import "./detail-product-card.css";
 
 const DetailProductCard = ({
+  _id,
   image,
   name,
   brand,
@@ -10,6 +12,9 @@ const DetailProductCard = ({
   countInStock,
   price,
 }) => {
+
+  const { addToCart } = useContext(ProductsContext);
+  const item = { img:image, name, price, countInStock, _id };
   return (
     <div className="container-details">
       <div className="image-details">
@@ -40,7 +45,7 @@ const DetailProductCard = ({
             <div className="container-button-detail">
               <div
                 className="product-card-button-details"
-                onClick={() => console.log("hola")}
+                onClick={() => addToCart(item)}
               >
                 Add item to cart
               </div>

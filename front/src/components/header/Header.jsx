@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link to="/cart">
+      <Link className="header-cont-car" to="/cart">
         <i className="fa-solid fa-cart-shopping"></i> {cart?.length}{" "}
       </Link>
       

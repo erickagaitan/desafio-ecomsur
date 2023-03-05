@@ -2,6 +2,10 @@
   color: rgb(255, 255, 255);
 }
 
+.cartlist{
+min-height: 80vh;
+}
+
 .card.content img {
   width: 100%;
   display: flex;
@@ -90,14 +94,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.cart {
-  padding-top: 7rem;
-}
-
-.cart h2 {
-  margin-bottom: 2rem;
 }
 
 .cart li {

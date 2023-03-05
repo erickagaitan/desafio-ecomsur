@@ -17,6 +17,7 @@ const ProductDetails = () => {
 
   return (
     <DetailProductCard
+      _id={details.id}
       image={details.image}
       name={details.name}
       brand={details.brand}
