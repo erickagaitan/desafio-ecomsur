@@ -1,8 +1,10 @@
 .cart {
-padding-top: 30px;
-padding-left: 30px;
-  }
-  
-  .cart h2 {
-    margin-bottom: 2rem;
-  }
+  padding-top: 30px;
+  padding-left: 30px;
+  height: calc(100vh - 105px);
+
+}
+
+.cart h2 {
+  margin-bottom: 2rem;
+}

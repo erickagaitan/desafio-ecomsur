@@ -1,11 +1,13 @@
-.contenedor-footer{
-background-color: black;
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 45px;
 }
 
-.title-footer{
-color: white;
-text-align: center;
-font-size: 20px;
-height: 45px;
-padding-top: 20px;
+.title-footer {
+  color: white;
+  text-align: center;
+  font-size: 14px;
 }
