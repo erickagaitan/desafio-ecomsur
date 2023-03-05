@@ -10,7 +10,7 @@ const Cart = () => {
     <div className="cart">
       <h2>Detalles del pedido</h2>
       {cart.length !== 0 ? (
-        <CartList cart={cart} products={products}></CartList>
+        <CartList cart={cart} products={products} />
       ) : (
         <p className="empty-card">No hay elementos en el carrito</p>
       )}

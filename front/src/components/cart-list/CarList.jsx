@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import "./cart-list.css";
 
 const CartList = ({ cart, products }) => {
-
-  const { addToCart, removefromCart, cartTotal } = useContext(ProductsContext);
+  const { addToCart, removefromCart, removeItemCartById, cartTotal } =
+    useContext(ProductsContext);
   return (
     <div className="cartlist">
       <ul>
-        {cart.map((item) => {
+        {cart?.map((item, i) => {
           const imagen = `http://localhost:5000/${item.img}`;
           return (
-            <li key={item.id}>
+            <li key={i}>
               <div className="product">
                 <img className="image-cart" src={imagen} alt={item.name} />
                 <h4>{item.name}</h4>
@@ -34,6 +34,7 @@ const CartList = ({ cart, products }) => {
                   >
                     +
                   </button>
+                  <div className="cart-list-eliminar" onClick={() => removeItemCartById(item._id)}>Eliminar</div>
                 </div>
               </div>
             </li>

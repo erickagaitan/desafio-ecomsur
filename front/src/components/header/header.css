@@ -10,8 +10,13 @@
   text-align: center;
   height: 60px;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
+}
+
+.logo_header{
+padding-left: 20px;
+cursor: pointer;
 }
 
 .header-cont-car{
