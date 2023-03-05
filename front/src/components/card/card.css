@@ -32,8 +32,21 @@
   cursor: pointer;
   background: #000;
   color:#fff;
+  font-size: 14px; 
+}
+
+.productcard-button-disabled {
+  width: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+  background: #9c9696;
+  color:#fff;
   font-size: 14px;
-  
 }
 
 .product-card-name {

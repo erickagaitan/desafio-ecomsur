@@ -3,9 +3,14 @@ import { ProductsContext } from "../../context/Context";
 import { Link } from "react-router-dom";
 import "./cart-list.css";
 
-const CartList = ({ cart, products }) => {
-  const { addToCart, removefromCart, removeItemCartById, cartTotal } =
-    useContext(ProductsContext);
+const CartList = ({ cart }) => {
+  const { 
+    addToCart, 
+    removefromCart, 
+    removeItemCartById, 
+    cartTotal 
+  } = useContext(ProductsContext);
+
   return (
     <div className="cartlist">
       <ul>
@@ -34,7 +39,12 @@ const CartList = ({ cart, products }) => {
                   >
                     +
                   </button>
-                  <div className="cart-list-eliminar" onClick={() => removeItemCartById(item._id)}>Eliminar</div>
+                  <div
+                    className="cart-list-eliminar"
+                    onClick={() => removeItemCartById(item._id)}
+                  >
+                    Eliminar
+                  </div>
                 </div>
               </div>
             </li>

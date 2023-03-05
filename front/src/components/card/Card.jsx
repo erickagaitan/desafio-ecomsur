@@ -37,13 +37,15 @@ const Card = ({ img, name, price, countInStock, _id }) => {
         </div>
       </div>
 
-      {countInStock ? (
-        <div className="container-product-card-button">
-          <div className="product-card-button" onClick={() => addToCart(item)}>
-            Add item to cart
-          </div>
-        </div>
-      ) : null}
+      <div className="container-product-card-button">
+        <button
+          disabled={countInStock ? false : true}
+          className={countInStock ? "product-card-button" : "productcard-button-disabled"}
+          onClick={() => addToCart(item)}
+        >
+          Add item to cart
+        </button>
+      </div>
     </div>
   );
 };

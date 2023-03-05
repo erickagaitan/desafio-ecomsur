@@ -22,19 +22,14 @@
 h4 {
   margin: auto;
   width: 100%;
-  font-size: 25px;
+  font-size: 16px;
   padding-bottom: 10px;
   margin-bottom: 10px;
   text-transform: capitalize;
   font-family: "Roboto", sans-serif;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
-}
-
 h3 {
-  font-family: "Roboto", sans-serif;
   margin-bottom: 5px;
 }
 
@@ -87,7 +82,7 @@ ul {
 }
 
 .bold {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bolder;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
@@ -116,7 +111,7 @@ span {
 }
 
 .cart li .product h4 {
-  font-size: 20px;
+  font-size: 16px;
   text-transform: capitalize;
 }
 
@@ -151,8 +146,7 @@ span {
 }
 
 .empty-card {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn-final {

@@ -16,7 +16,12 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img className="logo_header" src={Logo} onClick={() => irAlHome()} width={55} />
+      <img
+        className="logo_header"
+        src={Logo}
+        onClick={() => irAlHome()}
+        width={55}
+      />
 
       <Link className="header-cont-car" to="/cart">
         <i className="fa-solid fa-cart-shopping"></i> {cart?.length}{" "}
